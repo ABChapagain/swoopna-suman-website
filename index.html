@@ -34,9 +34,6 @@
               <ul class="st-nav-list st-onepage-nav">
                 <li><a href="#home" class="st-smooth-move">Home</a></li>
                 <li><a href="#about" class="st-smooth-move">About</a></li>
-                <!-- <li><a href="#resume" class="st-smooth-move">Resume</a></li>
-                <li><a href="#portfolio" class="st-smooth-move">Portfolio</a></li>
-                <li><a href="#blog" class="st-smooth-move">Blog</a></li> -->
                 <li><a href="#contact" class="st-smooth-move">Contact</a></li>
               </ul>
               <div class="sp-phone">
@@ -75,7 +72,7 @@
     </div>
     <!-- Hero Image - Social Link Group -->
     <div class="st-hero-img st-to-right">
-      <img class="wow fadeInRight" src="assets/img/section/hero-img.png" alt="Swoopna Suman">
+        <img class="wow fadeInRight" src="assets/img/section/hero-img.png" alt="Swoopna Suman">
       <div class="st-social-group wow fadeInLeft">
         <div class="st-social-link">
           <a href="#" class="st-social-btn active">
@@ -168,7 +165,7 @@
         <div class="col-lg-6">
           <h3 class="st-contact-title">Just say Hello</h3>
           <div id="st-alert"></div>
-          <form action="#" method="POST" class="st-contact-form" id="contact-form">
+          <form name="contact_form" data-netlify="true" method="POST" class="st-contact-form" id="contact-form">
             <div class="st-form-field">
               <input type="text" id="name" name="name" placeholder="Your Name" required>
             </div>
@@ -179,7 +176,7 @@
               <input type="text" id="subject" name="subject" placeholder="Your Subject" required>
             </div>
             <div class="st-form-field">
-              <textarea cols="30" rows="10" id="msg" name="msg" placeholder="Your Message" required></textarea>
+              <textarea cols="30" rows="10" id="msg" name="message" placeholder="Your Message" required></textarea>
             </div>
             <button class="st-btn st-style1 st-color1" type="submit" id="submit" name="submit">Send message</button>
           </form>
