@@ -523,6 +523,28 @@ hr {
   }
 }
 
+/* Events */
+
+.scrollbar {
+  overflow-y: scroll;
+  height: 400px;
+}
+
+/* width */
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.scrollbar::-webkit-scrollbar-track {
+  background: #99a1b4;
+}
+
+/* Handle */
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #0a1735;
+}
+
 /*--------------------------------------------------------------
 5. Header
 ----------------------------------------------------------------*/
@@ -1751,6 +1773,12 @@ canvas {
   padding-left: 40px;
   margin-left: 20px;
   border-left: 1px solid #232935;
+}
+
+@media screen and (max-width: 991px) {
+  .scrollbar {
+    margin-top: 20px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -3049,4 +3077,8 @@ canvas {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.footer-madewith:hover {
+  color: white;
 }
